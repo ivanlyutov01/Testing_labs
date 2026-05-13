@@ -1,0 +1,7 @@
+version: "3.9"
+
+services:
+  tests:
+    build: .
+    container_name: kpi_tests
+    command: python -m pytest test_kpi.py -v
